@@ -20,6 +20,8 @@
     --neutral-pale-blue: hsl(221, 100%, 96%);
     --neutral-light-lavendar: hsl(241, 100%, 89%);
     --neutral-gray-blue: hsl(224, 30%, 27%);
+
+    font-size: 16px;
 }
 
 @font-face {
@@ -33,4 +35,26 @@
 
 body {
     font-family: "Hanken Grotesk", sans-serif;
+    background-color: var(--neutral-pale-blue);
+}
+
+@media screen and (max-width: 420px) {
+    /* font sizes */
+    .fs-1 {
+        font-size: 3.5rem;
+    }
+
+    .fs-2 {
+        font-size: 1.5rem;
+    }
+
+    .fs-3 {
+        font-size: 1.125rem;
+    }
+
+    .fs-4 {
+        font-size: 1rem;
+    }
+
+    
 }
