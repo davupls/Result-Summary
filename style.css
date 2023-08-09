@@ -38,6 +38,44 @@ body {
     background-color: var(--neutral-pale-blue);
 }
 
+/* colors */
+.result__title,
+.result__denominator,
+.result__p {
+    color: var(--neutral-light-lavendar);
+}
+
+.result__numerator,
+.result__h1,
+.btn {
+    color: var(--neutral-white);
+}
+
+.sum__fraction {
+    color: var(--neutral-gray-blue);
+}
+
+.sum__title {
+    color: black;
+}
+
+.reaction {
+    color: var(--primary-red);
+}
+
+.memory {
+    color: var(--primary-yellow);
+}
+
+.verbal {
+    color: var(--primary-teal);
+}
+
+.visual {
+    color: var(--primary-blue)
+}
+
+
 @media screen and (max-width: 420px) {
     /* font sizes */
     .fs-1 {
@@ -55,6 +93,5 @@ body {
     .fs-4 {
         font-size: 1rem;
     }
-
-    
 }
+
