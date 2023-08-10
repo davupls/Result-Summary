@@ -19,6 +19,8 @@ let sumScore;
 let sumCategoryName;
 let sumIcon;
 const resultNumerator = document.querySelector(".result__numerator");
+const performanceTitle = document.querySelector(".result__h1");
+const performancePara = document.querySelector(".result__p");
 
 fetch("./data.json")
     .then(response => {
@@ -40,6 +42,9 @@ fetch("./data.json")
         }
         const scoreAverage = calculateAverage(data);
         resultNumerator.innerText = scoreAverage;
+        const userGrade = gradeSystem(scoreAverage);
+        performanceTitle.innerText = userGrade[0];
+        performancePara.innerText = userGrade[1];
     })
     .catch(error => {
        console.error("Error fetching or parsing JSON", error);
@@ -60,4 +65,23 @@ function calculateAverage(dataObject) {
 
     average = total / dataObject.length;
     return Math.floor(average);
+}
+
+
+const performanceDetail = {
+    45: "Your score is below 45%. Keep practicing and you'll see improvement soon!",
+    84: "Your performance exceed 65% of the people conducting the test here!",
+    85: "Outstanding! You've outperformed 85% of participants taking this test!"
+};
+
+function gradeSystem(average) {
+    if (average <= 45) {
+        return ["Nice Try", performanceDetail[45]];
+    } else if (average <= 84) {
+        return ["Great", performanceDetail[84]];
+    } else if (average > 84) {
+        return ["Outstanding", performanceDetail[85]];
+    } else {
+        console.log("Something went wrong");
+    }
 }
