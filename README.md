@@ -27,6 +27,8 @@ Users should be able to:
 - **Bonus**: Use the local JSON data to dynamically populate the content
 
 ### Screenshot
+![Screenshot 2023-08-10 at 15-17-35 Frontend Mentor Results summary component](https://github.com/davupls/Result-Summary/assets/47851457/dbede2ab-7837-43a3-aad9-aa755d532b9e)
+
 
 
 
