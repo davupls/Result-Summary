@@ -152,11 +152,32 @@ li {
 
 
     /* Summary Section */
+    .summary {
+        padding: 24px 0;
+    }
 
     .summary-content {
         margin: 0 auto;
         max-width: 315px;
         width: 84%;
     }
+
+    ul {
+        margin-top: 24px;
+    }
+
+    .sum__list {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        padding: 17px 16px;
+    }
+
+    .sum__list-right {
+        display: flex;
+        gap: 12px;
+    }
+
+    
 }
 
