@@ -51,6 +51,11 @@ body {
     color: var(--neutral-white);
 }
 
+main {
+    background-color: var(--neutral-white);
+    border-radius: 25px;
+}
+
 .sum__fraction {
     color: var(--neutral-gray-blue);
 }
@@ -77,6 +82,10 @@ body {
 
 li {
     list-style: none;
+}
+
+button {
+    cursor: pointer;
 }
 
 .result {
@@ -109,7 +118,6 @@ li {
 
 
     main {
-        background-color: var(--neutral-white);
         min-height: 100vh;
         display: grid;
         grid-template-rows: 0.74fr 1fr;
@@ -205,5 +213,118 @@ li {
         border: none;
         border-radius: 100px;
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 751px) {
+     /* font sizes */
+     .fs-1 {
+        font-size: 4.5rem;
+    }
+
+    .fs-2 {
+        font-size: 2rem;
+    }
+
+    .fs-3 {
+        font-size: 1.5rem;
+    }
+
+    .fs-4 {
+        font-size: 1.125rem;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        max-width: 736px;
+    }
+
+    /* Result  Section */
+    .result {
+        padding: 38px 0 46px;
+        min-width: 368px;
+        border-radius: 25px;
+    }
+
+    .result__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .result__title {
+        margin-bottom: 35px;
+    }
+
+    .round-display {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 100px;
+        margin-bottom: 28px;
+        height: 200px;
+        width: 200px;
+    }
+
+    .result__h1 {
+        margin-bottom: 14px;
+    }
+
+    .result__p {
+        max-width: 260px;
+    }
+
+
+    /* Summary Section */
+    .summary-content {
+        margin: 0 auto;
+        padding-top: 38px;
+        width: 85%;
+    }
+
+    .sum__title {
+        margin-bottom: 24px;
+    }
+
+    .sum__list {
+        display: flex;
+        justify-content: space-between;
+        padding: 17px 16px;
+        margin-bottom: 16px;
+    }
+
+    .sum__list-right {
+        display: flex;
+        gap: 12px;
+    }
+
+    .sum__btn-container {
+        margin-top: 41px;
+    }   
+
+    .btn {
+        background-color: var(--neutral-gray-blue);
+        border: none;
+        border-radius: 100px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        width: 100%;
+    }
+
+    .btn:hover {
+        background: linear-gradient(hsla(252, 100%, 67%, 1), hsla(241, 81%, 54%, 1));
     }
 }
