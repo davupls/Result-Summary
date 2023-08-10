@@ -17,7 +17,6 @@
 
 design/
 style-guide.md
-Readme.md
 
 # Npm files to ignore:
 node_modules/
