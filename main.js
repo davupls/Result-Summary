@@ -1,6 +1,6 @@
 const summaryListBGColors = [
-    "hsl(0, 100%, 67%)", "hsl(39, 100%, 56%)",
-    "hsl(166, 100%, 37%)", "hsl(234, 85%, 45%)"
+    "hsla(0, 100%, 67%, 0.08)", "hsla(39, 100%, 56%, 0.08)",
+    "hsla(166, 100%, 37%, 0.08)", "hsla(234, 85%, 45%, 0.08)"
 ];
 
 const listContainer = document.querySelector("ul");
